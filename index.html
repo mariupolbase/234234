@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>MultiShop - Online Shop Website Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FFD333',
+                        secondary: '#3D464D',
+                        light: '#F5F5F5',
+                        dark: '#3D464D',
+                    },
+                    fontFamily: {
+                        sans: ['Roboto', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .swiper-button-prev,
+        .swiper-button-next {
+            color: #fff;
+            width: 45px;
+            height: 45px;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+        }
+
+        .swiper-button-prev:after,
+        .swiper-button-next:after {
+            font-size: 20px;
+        }
+
+        .swiper-pagination-bullet {
+            width: 12px;
+            height: 12px;
+            background: transparent;
+            border: 1px solid #fff;
+            opacity: 1;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid bg-light px-6 py-2">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+            <div class="text-center md:text-left mb-2 md:mb-0">
+                <div class="inline-flex items-center text-secondary text-sm">
+                    <a class="text-secondary hover:text-primary pr-3" href="">About</a>
+                    <a class="text-secondary hover:text-primary px-3 border-l border-gray-300" href="">Contact</a>
+                    <a class="text-secondary hover:text-primary px-3 border-l border-gray-300" href="">Help</a>
+                    <a class="text-secondary hover:text-primary px-3 border-l border-gray-300" href="">FAQs</a>
+                </div>
+            </div>
+            <div class="text-center md:text-right">
+                <div class="inline-flex items-center text-secondary text-sm relative z-50">
+                    <div class="group relative cursor-pointer mr-3">
+                        <button class="bg-white px-2 py-1 text-sm border border-gray-200 flex items-center shadow-sm">
+                            My Account <i class="fa fa-angle-down ml-1"></i>
+                        </button>
+                        <div
+                            class="absolute right-0 mt-0 w-32 bg-white border border-gray-200 shadow-lg hidden group-hover:block z-50">
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Sign In</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Sign Up</a>
+                        </div>
+                    </div>
+                    <div class="group relative cursor-pointer mr-3">
+                        <button class="bg-white px-2 py-1 text-sm border border-gray-200 flex items-center shadow-sm">
+                            USD <i class="fa fa-angle-down ml-1"></i>
+                        </button>
+                        <div
+                            class="absolute right-0 mt-0 w-20 bg-white border border-gray-200 shadow-lg hidden group-hover:block z-50">
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">EUR</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">GBP</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">CAD</a>
+                        </div>
+                    </div>
+                    <div class="group relative cursor-pointer">
+                        <button class="bg-white px-2 py-1 text-sm border border-gray-200 flex items-center shadow-sm">
+                            EN <i class="fa fa-angle-down ml-1"></i>
+                        </button>
+                        <div
+                            class="absolute right-0 mt-0 w-20 bg-white border border-gray-200 shadow-lg hidden group-hover:block z-50">
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">FR</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">AR</a>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100">RU</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid px-6 py-6 md:py-8 bg-white">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 items-center">
+            <div class="text-left font-bold text-4xl uppercase relative">
+                <span class="px-4 text-secondary bg-gray-100 border border-secondary"
+                    style="margin-right: -5px;">Multi</span>
+                <span class="px-4 bg-primary text-secondary ml-0 border border-primary">Shop</span>
+            </div>
+            <div class="text-left">
+                <form action="">
+                    <div class="flex">
+                        <input type="text"
+                            class="form-control w-full border border-gray-300 px-4 py-2 focus:outline-none"
+                            placeholder="Search for products">
+                        <div class="bg-white border border-gray-300 border-l-0 text-primary px-4 py-2">
+                            <i class="fa fa-search"></i>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="text-right">
+                <p class="mb-0 text-gray-500 text-sm">Customer Service</p>
+                <h5 class="text-lg font-bold text-secondary">+012 345 6789</h5>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-secondary mb-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+            <div class="hidden lg:block lg:col-span-3">
+                <a
+                    class="flex items-center justify-between bg-primary w-full h-[65px] px-6 text-secondary no-underline cursor-pointer">
+                    <h6 class="text-secondary font-medium m-0 flex items-center"><i
+                            class="fa fa-bars mr-2"></i>Categories</h6>
+                    <i class="fa fa-angle-down text-secondary"></i>
+                </a>
+            </div>
+            <div class="col-span-12 lg:col-span-9">
+                <nav
+                    class="flex flex-col lg:flex-row items-center justify-between bg-secondary py-3 lg:py-0 h-full px-6">
+                    <div class="flex flex-col lg:flex-row items-center w-full lg:w-auto">
+                        <a href="" class="nav-item nav-link active text-primary px-4 py-3 hover:text-primary">Home</a>
+                        <a href="" class="nav-item nav-link text-white px-4 py-3 hover:text-primary">Shop</a>
+                        <a href="" class="nav-item nav-link text-white px-4 py-3 hover:text-primary">Shop Details</a>
+                        <div class="nav-item dropdown relative group">
+                            <a href="#" class="nav-link text-white px-4 py-3 hover:text-primary flex items-center">Pages
+                                <i class="fa fa-angle-down ml-1"></i></a>
+                            <div
+                                class="absolute left-0 mt-0 w-40 bg-primary border-none rounded-none shadow-lg hidden group-hover:block z-50">
+                                <a href="" class="block px-4 py-2 hover:bg-secondary hover:text-white">Shopping Cart</a>
+                                <a href="" class="block px-4 py-2 hover:bg-secondary hover:text-white">Checkout</a>
+                            </div>
+                        </div>
+                        <a href="" class="nav-item nav-link text-white px-4 py-3 hover:text-primary">Contact</a>
+                    </div>
+                    <div class="hidden lg:flex items-center py-3 lg:py-0">
+                        <a href="" class="text-primary px-2">
+                            <i class="fas fa-heart"></i>
+                            <span
+                                class="text-white border border-gray-400 rounded-full px-1.5 py-0.5 text-xs ml-1">0</span>
+                        </a>
+                        <a href="" class="text-primary px-2 ml-3">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span
+                                class="text-white border border-gray-400 rounded-full px-1.5 py-0.5 text-xs ml-1">0</span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mb-8 px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+            <div class="col-span-12">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide relative">
+                            <img class="w-full h-[430px] object-cover"
+                                src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?q=80&w=1500&auto=format&fit=crop"
+                                alt="Men Fashion">
+                            <div
+                                class="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center bg-black/40 text-center">
+                                <div class="p-6 max-w-[700px]">
+                                    <h1 class="text-5xl uppercase font-bold text-white mb-3">Men Fashion</h1>
+                                    <p class="mx-auto text-white mb-4 text-lg">Lorem ipsum dolor sit amet consectetur
+                                        adipisicing elit. Quisquam, quod.
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur quae, porro
+                                        illo doloremque voluptate aspernatur commodi nihil ex corporis dicta sit minus,
+                                        quo optio error laudantium ut ipsa atque voluptatum.</p>
+                                    <a href=""
+                                        class="inline-block border-2 border-white text-white hover:bg-white hover:text-secondary py-2 px-6 transition duration-300">Shop
+                                        Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide relative">
+                            <img class="w-full h-[430px] object-cover"
+                                src="https://images.unsplash.com/photo-1487222477894-8943e31ef7b2?q=80&w=1500&auto=format&fit=crop"
+                                alt="Women Fashion">
+                            <div
+                                class="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center bg-black/40 text-center">
+                                <div class="p-6 max-w-[700px]">
+                                    <h1 class="text-5xl uppercase font-bold text-white mb-3">Women Fashion</h1>
+                                    <p class="mx-auto text-white mb-4 text-lg">Loremreku justo sea eirmod diam voluptua.
+                                        Eirmod rebum et takimata eirmod et est ipsum diam al.</p>
+                                    <a href=""
+                                        class="inline-block border-2 border-white text-white hover:bg-white hover:text-secondary py-2 px-6 transition duration-300">Shop
+                                        Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide relative">
+                            <img class="w-full h-[430px] object-cover"
+                                src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=1500&auto=format&fit=crop"
+                                alt="Kids Fashion">
+                            <div
+                                class="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center bg-black/40 text-center">
+                                <div class="p-6 max-w-[700px]">
+                                    <h1 class="text-5xl uppercase font-bold text-white mb-3">Kids Fashion</h1>
+                                    <p class="mx-auto text-white mb-4 text-lg">Loremreku justo sea eirmod diam voluptua.
+                                        Eirmod rebum et takimata eirmod et est ipsum diam al.</p>
+                                    <a href=""
+                                        class="inline-block border-2 border-white text-white hover:bg-white hover:text-secondary py-2 px-6 transition duration-300">Shop
+                                        Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper(".mySwiper", {
+            spaceBetween: 0,
+            centeredSlides: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                renderBullet: function (index, className) {
+                    return '<span class="' + className + '"></span>';
+                },
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            loop: true,
+        });
+    </script>
+</body>
+
+</html>
